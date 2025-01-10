@@ -4,7 +4,7 @@ import json
 
 app = Flask(__name__)
 
-allowed_friend_keys = ("GAY_hack", "HACK")
+allowed_friend_keys = ("GAY_hack", "BERLIN", "HACK")
 
 spam_visit_key = ("GAY_hack", "HACK")
 
