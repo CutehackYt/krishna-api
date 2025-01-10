@@ -14,7 +14,7 @@ allowed_like_key = {
     "HACK": "https://likess.vercel.app"
 }
 
-allowed_keys = ("GAY_hack", "HACK")
+allowed_keys = ("GAY_hack", "BERLIN", "HACK")
 
 @app.route("/profile_info", methods=["GET"])
 def profile_info():
