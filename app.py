@@ -10,6 +10,7 @@ spam_visit_key = ("GAY_hack", "HACK")
 
 allowed_like_key = {
     "GAY_hack": "https://likes-two.vercel.app",
+    "BERLIN": "https://like-gs3q.vercel.app",
     "HACK": "https://likess.vercel.app"
 }
 
