@@ -9,7 +9,7 @@ allowed_friend_keys = ("GAY_hack", "BERLIN", "HACK")
 spam_visit_key = ("GAY_hack", "HACK")
 
 allowed_like_key = {
-    "GAY_hack": "https://likes-two.vercel.app",
+    "GAY_hack": "https://like-krishna-kd23.vercel.app",
     "BERLIN": "https://like-gs3q.vercel.app",
     "HACK": "https://likess.vercel.app"
 }
