@@ -238,27 +238,6 @@ def spam_request():
 def page_not_found(e):
     return jsonify({'error': "Invalid Request. Please check your URL."}), 404
 
-@app.route("/request", methods=["GET"])
-def spam_request():
-    uid = request.args.get("uid")
-    region = request.args.get("region")
-    key = request.args.get("key")
-    
-    if not region or not key:
-        return jsonify({'error': 'uid, region and key are required'}), 400
-    
-    if key in allowed_friend_keys:
-        response = requests.get(f"https://rq-ten.vercel.app/spam_request?uid={uid}&server_name={region}")
-        if response.status_code == 200:
-            return jsonify({'status': response.text}), 200
-        else:
-            return jsonify({"error": "Something went wrong. Please check your UID And Region."}), response.status_code
-    else:
-        return jsonify({'error': "Invalid Key. Please check your key."}), 403
-
-@app.errorhandler(404)
-def page_not_found(e):
-    return jsonify({'error': "Invalid Request. Please check your URL."}), 404
 
 if __name__ == "__main__":
     app.run(debug=True)
