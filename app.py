@@ -100,7 +100,7 @@ def region_info():
         return jsonify({'error': 'uid and key are required'}), 400
     
     if key in allowed_keys:
-        response = requests.get(f"https://region-infokrishna.vercel.app/region_info?uid={uid}")
+        response = requests.get(f"https://region-beta.vercel.app/region_info?uid={uid}")
         if response.status_code == 200:
             return response.text
         else:
